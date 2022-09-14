@@ -1,7 +1,9 @@
 #include "main.h"
 /**
  * main - entry point
+ *
  * Description - a program that prints _putchar
+ * @c: The character to print
  *
  * Return: always 0
  */
