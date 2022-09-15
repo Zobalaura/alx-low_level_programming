@@ -1,24 +1,30 @@
 #include <stdio.h>
 /**
- * main - main block
- * Description: Print the sum of even Fibonacci nums not exceeding 4,000,000.
+ * main -main block
+ * Description: Print the first 50 fibonacci numbers, star
  * Return: 0
  */
 int main(void)
 {
-	int i = 1, j = 2, total = 0;
-	int k;
+	int count = 2;
+	long int i = 1, j = 2;
+	long int k;
 
-	while (j < 4000000)
+	printf("%lu, ", i);
+	while (count <= 50)
 	{
-		if (j % 2 == 0)
+		if (count == 50)
 		{
-			total += j;
+			printf("%lu\n", j);
+		}
+		else
+		{
+			printf("%lu, ", j);
 		}
 		k = j;
 		j += i;
 		i = k;
+		count++;
 	}
-	printf("%d\n", total);
 	return (0);
 }
